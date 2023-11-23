@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="menu"> 
+    
+    <ul> 
+      <label for="buscar"></label>
+      <input type="text" id="buscar" placeholder="Busque aqui"><br><br>
+      <li><a href="#">Celulares</a></li>
+      <li><a href="#">Acessórios</a></li>
+      <li><a href="#">Fones</a></li>
+    </ul> 
+  </nav>
+
+  <div class="address-section">
+    <h2>Endereço de Entrega</h2>
+    <form id="address-form">
+      <label for="street">Logradouro:</label>
+      <input type="text" id="street" required>
+
+      <label for="number">Número:</label>
+      <input type="text" id="number" required><br><br>
+
+      <label for="city">Cidade:</label>
+      <input type="text" id="city" required>
+
+      <label for="state">Estado:</label>
+      <input type="text" id="state" required><br><br>
+
+      <label for="zip-code">CEP:</label>
+      <input type="text" id="zip-code" required>
+
+      <label for="complement">Complemento:</label>
+      <input type="text" id="complement"><br><br>
+
+      <button type="submit">Salvar Endereço</button>
+    </form>
+    <p id="address-status"></p>
+  </div>
+
+  <div class="payment-section">
+    <h2>Método de Pagamento</h2>
+    <div id="card-payment" class="payment-method">
+      <h3>Cartão de Crédito</h3>
+      <form id="card-form">
+
+        <label for="name">Nome impresso no cartão:</label>
+        <input type="text" id="name" placeholder="Nome completo" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="123" required><br><br>
+  
+
+        <label for="card-number">Número do Cartão:</label>
+        <input type="text" id="card-number" placeholder="1234 5678 9101 1121">
+
+        <label for="expiry-date">Data de Expiração:</label>
+        <input type="text" id="expiry-date" placeholder="MM/YY"><br><br>
+        
+    
+        <button type="submit">Pagar com Cartão</button>
+      </form>
+      <p id="card-status"></p>
+    </div>
+    
+    <div id="boleto-payment" class="payment-method">
+      <h3>Boleto</h3>
+      <button id="generate-boleto">Gerar Boleto</button>
+      <p id="boleto-status"></p>
+    </div>
+
+    </div>
+
+    <div class="payment-section">
+        <button id="finish">FINALIZAR COMPRA</button>
+      
+  </div>
+
+
+  <footer class="rodape" id="contato">
+    <div class="rodape-div">
+
+        <div class="rodape-div-1">
+            <div >
+                <!-- elemento -->
+                <span><b><img src="imagemlogo.png" width="320" height="320"/></b></span>
+               
+            </div>
+        </div>
+
+        <div class="rodape-div-2">
+            <div class="rodape-div-2-coluna">
+                <!-- elemento -->
+                <span><b><a href="#">Sobre Nós</a></b></span>
+
+               
+            </div>
+        </div>
+
+        <div class="rodape-div-3">
+            <div class="rodape-div-3-coluna">
+                <!-- elemento -->
+                <span><b><a href="#">Fale conosco</a></b></span>
+               
+            </div>
+        </div>
+
+        <div class="rodape-div-4">
+            <div class="rodape-div-4-coluna">
+                <!-- elemento -->
+                <span><b><a href="#">Área do colaborador</a></b></span>
+            </div>
+        </div>
+
+    </div>
+    <p class="rodape-direitos">Copyright © 2023 – Todos os Direitos Reservados.</p>
+</footer>
+
+<div class="logoO"><img src="imagemlogo.png" width="320" height="320"></div>
+
+
+
+  
+
+</body>
+</html>
+    
